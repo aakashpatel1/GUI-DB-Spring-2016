@@ -3,9 +3,9 @@
 ##Installation Instructions
 
 Make you sure you have the following software installed. You should be able to run git and vagrant from the command line.
-* GitHub: https://desktop.github.com/
-* Vagrant: https://www.vagrantup.com/downloads.html
-* Virtual Box: https://www.virtualbox.org/wiki/Downloads
+	* GitHub: https://desktop.github.com/
+	* Vagrant: https://www.vagrantup.com/downloads.html
+	* Virtual Box: https://www.virtualbox.org/wiki/Downloads
 
 1. Navigate to the directory where you have chosen to keep your development code in the command prompt. run the following command:
 	* git clone https://github.com/scotch-io/scotch-box.git
