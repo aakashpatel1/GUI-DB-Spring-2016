@@ -2,7 +2,7 @@
 
 ##Installation Instructions
 
-* Make you sure you have the following software installed. You should be able to run git and vagrant from the command line.
+__Make you sure you have the following software installed. You should be able to run git and vagrant from the command line.__
 	* GitHub: https://desktop.github.com/
 	* Vagrant: https://www.vagrantup.com/downloads.html
 	* Virtual Box: https://www.virtualbox.org/wiki/Downloads
