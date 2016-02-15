@@ -17,4 +17,4 @@ Make you sure you have the following software installed. You should be able to r
 
 3. Go to the following site in your browser: 192.168.33.10.
 4. If you see this site, you have successfully configured your development environment.
-5. 
+5. Run the following command to clone our boilerplate:
