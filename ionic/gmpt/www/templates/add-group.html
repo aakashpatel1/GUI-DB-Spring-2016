@@ -1,0 +1,51 @@
+<ion-view view-title="Add Group">
+<ion-content class="padding">
+<label>Group Name</label>
+<p></p>
+<label class="item item-input">
+  <input ng-model="groupName" type="text">
+</label>
+<p></p>
+<label>Description</label>
+<div class="card">
+  <div class="item item-text-wrap">
+    <input ng-model="groupDesc" type="text">
+  </div>
+</div>
+<p></p>
+
+
+<label>Add Team Member</label>
+<p></p>
+  <div class="container">
+<form name="frm" ng-submit="addMember()">
+  <label class="item item-input">
+    <input type="text" name="_username" ng-model="_username" placeholder="Username" required>
+  </label>
+  <label class="item item-input">
+    <input type="text" name="_email" ng-model="_email" placeholder="Email" required>
+  </label>
+  <p></p>
+  <button class="button button-assertive" ng-disabled="frm.$invalid">
+    + Add<p></p></button>
+  </form>
+  <p></p>
+
+  <ul>
+    <li ng-repeat="member in members">
+      <span ng-class="{'done':member.done}" type = "btn btn-warning">{{member._username}}
+        <p>{{member._email}}
+        <button ng-click="removeItem($index)">X</button> 
+      </span>
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <button class="button button-full button-positive" ng-click="addGroup()" href="#/tab/dash">
+    Create Group
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </button>
+</div>
+</ion-content>
+
+</ion-view>

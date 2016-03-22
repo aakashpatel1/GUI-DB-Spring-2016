@@ -2,6 +2,14 @@
 return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production
+		//DB connection information
+		'dbConn' => [
+            'username' => 'root',
+            'password' => 'root',
+            'host' => 'localhost',
+            'dbname' => 'GMPT',
+            'db' => 'mysql',
+        ],
 
         // Renderer settings
         'renderer' => [

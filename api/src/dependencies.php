@@ -3,6 +3,17 @@
 
 $container = $app->getContainer();
 
+$container['dbConn'] = function ($c) {
+    $settings = $c->get('settings')['dbConn'];
+
+    $connString = $settings['db'] . ':host=' . $settings['host'];
+    $connString .= ';dbname=' . $settings['dbname'] . ';charset=utf8mb4';
+
+    $db = new PDO($connString, $settings['username'], $settings['password']);
+    
+    return $db;
+};
+
 // view renderer
 $container['renderer'] = function ($c) {
     $settings = $c->get('settings')['renderer'];
